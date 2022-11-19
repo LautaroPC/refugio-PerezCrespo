@@ -1,0 +1,399 @@
+
+/*#####################################################################################*/
+/*                                        DESKTOP                                      */
+/*#####################################################################################*/
+/*BODY HTML*/
+/* Fondo de la pagina*/
+body{
+    background-image: url("../img/backPhoto.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position:center; 
+    background-attachment: fixed;
+    top: 0; /*SACA EL MARGEN DE ARRIBA*/
+    left:0; /*SACA EL MARGEN DE IZQUIERDA*/
+}
+/* Letra de TODA la pagina  */
+*{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin: 0px; /* QUITA EL INTERLINEADO QUE HAY ENTRE LA LISTA Y LOS TITULOS*/
+}
+/*#####################################################################################*/
+/*DIV*/
+    /* Logo */
+    .img__logo{
+        margin-top: 0px;
+        width: 100%;
+    }
+/*HEADER*/
+    /* Estilo a los items de la barra en general */
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 30px;
+        list-style-type: none;
+    }
+    /* Color de la barra y posición */
+    .header__nav{
+        background-color:green;
+        opacity: 0.90;
+    }
+    .nav__bar{
+        color:white;
+        list-style-type:none; /*sacar viñeta o punto */
+    }
+    /*centrar cada seccion de la barra de navegacion*/
+    .header__box{
+        text-align: center;
+    }
+    .header__nav ul{
+        padding-left: 0px;
+    }
+    .header__nav ul li{
+        transition:all 0.4s ease;
+    }
+    /* Movimiento y color de la barra y sus items */
+    .header__nav ul li:hover{
+        transform: translateY(-3px);
+        transition:all 0.4s ease;
+    }
+    .nav__bar:hover{
+        color: white;
+        font-weight: bold;
+    }
+    .header__box:hover{
+        background-color: rgb(8, 33, 8);
+    }
+    /* Movimiento del boton en seccion adopción */
+    .button__contact{
+        transition:all 0.4s ease;     
+    }
+    .button__contact:hover{
+        background-color: lightcoral;
+        transform: scale(1.2,1.2);
+        transition:all 0.4s ease;  
+    }
+/*#####################################################################################*/
+/*MAIN*/
+    /* Color, opacidad e interlineado a el contenido del cuerpo de la pagina */
+    main{
+        line-height: 2; /*INTERLINEADO*/
+        background-color:white;
+        opacity: 0.90; /* OPACIDAD DEL FONDO DONDE ESTA EL CUERPO DEL TEXTO CON LA IMAGEN DEL FONDO*/
+    }
+    /* Margen y tipo de texto de los formularios */
+    form{
+        margin: 0 10%;
+        text-align: center;
+    }
+    /* Disposicion, tamaño, color de las letras en titulos y parrafos */
+    h1{
+        background-position:center;
+        font-size: 50px;
+        color:rgba(248, 97, 63, 0.945);
+    }
+    h2{
+        margin: 0 5%;
+        line-height: 1.5;
+        font-size: 25px;
+        text-align: left;
+        background-position:left;
+    }
+    h3{
+        margin: 0 5%;
+        line-height: 2;
+        font-size: 24px;
+        color:crimson;
+    }
+    h4{
+        margin: 0 5%;
+        font-size: 20px;
+        color:crimson;
+    }
+    p{
+        margin: 0 10% 1% 10%;
+        line-height: 2;
+        text-align: justify;
+        font-size: 20px;
+    }
+    .main__p{
+        font-size: 26px;
+        margin-bottom: 4px;
+    }
+    /* Tamaño de letra en comentario seccion contacto */
+    #commentLyrics{
+        font-size: 20px;
+    }
+    /* Tamaño de letra en la barra de asunto en seccion de contacto */
+    #affair{
+        font-size: 18px;
+    }
+    /* Tamaño de la letra de los botones */
+    input{
+        font-size: 18px;
+    }
+    /* Items de adopcion y donacion */
+    .main__item li {
+        list-style-type: circle;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 20px;
+    }
+    .main__donations li {
+        list-style-type: circle;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 20px;
+    }
+    /* Información del banco en donacion */
+    .main__bank{
+        margin:0% 20%;
+    }
+    .main__bank li{
+        border: 2px solid crimson;
+        box-shadow: 2px 1px 3px 3px lightcoral;
+        border-radius: 15px;
+        justify-content: center;
+        text-align: center;
+        margin: 30px 10px;
+        padding: 0px 10px;
+        list-style-type:none;
+        color:black;
+    }
+    /* Imagen de la pagina principal */
+    .main__img{
+        height: 500px;
+        width: 50%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    .main__index{
+        width: 40%;
+    }
+    /* Tamaño y efecto de foto - seccion adopcion */
+    .main__adop{
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10%;
+    }
+    /* Centrar la informacion */
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20%;
+        margin-right: 20%; 
+        padding-bottom:20px;
+    }
+    /* Solapa de adopcion en las fotos */
+    .main__card{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly; 
+        padding:20px;
+    }
+    .card__dog{
+        height: 200px;
+        object-fit: cover;
+        border-radius: 30px;
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+    /* Recuadro de la imagen en seccion adopcion*/
+    .cards{
+        border: 1px solid lightcoral;
+        box-shadow: 2px 1px 3px 3px lightsalmon;
+        border-radius: 15px;
+        justify-content: center;
+        text-align: center;
+        margin: 20px 40px;
+        padding: 0px 18px;
+    }
+    /* Tamaño del mapa*/
+    .main__map{
+        width:600px;
+        height:450px;
+        padding: 10px 0px;
+    }
+/*#####################################################################################*/
+/*FOOTER*/
+    /* Pie de pagina */
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        background-color: darkslategray;
+        color: white;
+        margin: 15px 0px;
+        
+    }
+    footer span{
+        margin-bottom: 23px;
+        margin-top: 13px ;
+        height: 20px;
+
+    }
+
+
+/*#####################################################################################*/
+/*                                        CELULAR                                      */
+/*#####################################################################################*/
+
+    @media screen and (max-width:768px) {
+        /*Margen de la foto*/
+        body{
+            background-position:-200px; 
+        }
+    /*#########################################################################*/
+    /*HEADER*/
+        /* Margen que tiene la barra entre el logo y el main*/
+        header{
+            margin-top: 10px;
+            margin-bottom: 13px;
+        }        
+        /* Tamaño de la barra de navegacion */
+        nav ul{
+            font-size: 15px;
+            margin: 0px 8px;
+            padding:0px;
+        }
+        /*centrar cada seccion de la barra de navegacion*/
+        .header__nav ul{
+            padding-left: 0px;
+        }
+        /* Movimiento y color de la barra y sus items */
+        .header__nav ul li:hover{
+            transform: translateY(-2px);
+        }
+        
+    /*#########################################################################*/
+    /*MAIN*/
+        /* Centrar la informacion */
+        main{
+            margin: 0% 5%;
+            padding-bottom:5px;
+        }
+        /* Tamaño de la imagen index */
+        .main__img{
+            height: 310px;
+            border-radius: 40px;
+            object-fit: cover;
+        }
+        .main__index{
+            width: 70%;
+        }
+        /* Tamaño y efecto de foto - seccion adopcion */
+        .main__adop{
+            height: 170px;
+            object-fit: cover;
+            border-radius: 10%;
+        }
+        /* Solapa de adopcion en las fotos */
+        .card__dog{
+            height: 130px;
+            border-radius: 30px;
+            margin: 5px;
+        }
+        .main__card{
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        /* Recuadro de la imagen en seccion adopcion */
+        .cards{
+            margin: 15px 60px;
+        }
+        /* Información del banco en donacion */
+        .main__bank{
+            margin: 0% 10%;
+            padding-left: 2%;
+        }
+        .main__bank li{
+            padding-left: 2%;
+            margin: 7% 0%; 
+        }
+        .main__bank ul{
+            padding:0%;
+            margin:0%;
+        }
+        /* Tamaño, color de las letras en titulos y parrafos */
+        h1{
+            font-size: 22px;
+            margin-top: 5px;
+        }
+        h2{
+            margin: 0px 25px;
+            font-size: 17px;
+        }
+        h3{
+            margin: 0px 25px;
+            font-size: 15px;
+        }
+        h4{
+            font-size: 15px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .main__p{
+            text-align:center;
+            margin: 0px 10px;
+            padding: 10px 0px;
+            font-size: 17px;
+            line-height: 1.5; /*INTERLINEADO*/
+        }
+        /* Tamaño de letra en la barra de asunto en seccion de contacto */
+        #affair{
+            font-size: 14px;
+        }
+        /* Tamaño de letra en comentario seccion contacto */
+        #commentLyrics{
+            font-size: 14px;
+        }
+        /* Tamaño de la letra de los botones*/
+        input{
+            font-size:  14px;
+        }
+        /* Items de adopcion y donacion */
+        .main__item li {
+            font-size: 14px;
+        }
+        .main__donations li {
+            font-size: 14px;
+        }
+        /* Tamaño del cuadro de comentario en contactar */
+        textarea{
+            width: 285px;
+        }
+        /* Tamaño del mapa */
+        .main__map{
+            width:280px;
+            height:250px;
+        }
+        /* Disposición de los botones */
+        button{
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+    /*#########################################################################*/
+    /*FOOTER*/
+        /* Pie de pagina */
+        footer{
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            justify-content: center;
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+        footer span{
+            justify-items: center;
+            height: 20px;
+            margin:6px;
+            text-align: center;
+            line-height: 1.5;
+        }
+    }
